@@ -10,9 +10,6 @@
 
     display: grid;
 
-    max-width: 1000rem;
-
-    width: 100%;
 
 }
 
@@ -231,7 +228,6 @@ h1 {
     padding: 0;
 
 }
-
 .m {
 
     text-decoration: none;
@@ -341,6 +337,8 @@ h3 {
     border-radius: 50px;
 
     position: relative;
+
+    margin-left: 6rem;
 
 }
 
@@ -528,7 +526,7 @@ h3 {
 
 .contact{
 
-    padding-left: 6.5rem;
+   
 
     padding-top: 3rem;
 
@@ -537,10 +535,3 @@ h3 {
     height: 75rem;
 
 }
-
-.body{
-
-  width: max-width;
-
-}
-
