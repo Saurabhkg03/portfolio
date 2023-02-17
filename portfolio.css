@@ -288,7 +288,9 @@ h3 {
 
     display: flex;
 
-    gap: 30rem;
+    justify-content: space-evenly;
+
+    gap: 5rem;
 
 }
 
@@ -534,4 +536,42 @@ h3 {
 
     height: 75rem;
 
+}
+
+@media (max-width: 768px) {
+
+    .info{
+        display: grid;
+    }
+
+    .aboutdiv{
+        display: grid;
+        gap: none;
+    }
+
+    #section1{
+        height: 84rem;
+    }
+    
+    #section2{
+        height: 70rem;
+    }
+
+    #section3{
+        height: 56rem;
+    }
+
+    #section4{
+        height: 115rem;
+    }
+
+    .bio{
+        height: 35rem;
+    }
+
+    .card{
+        width: fit-content;
+    }
+
+   
 }
