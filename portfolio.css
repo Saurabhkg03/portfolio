@@ -567,11 +567,15 @@ h3 {
 
     .bio{
         height: 35rem;
+        width: fit-content;
     }
 
     .card{
         width: fit-content;
     }
 
+    .pic{
+        width: 100%;
+    }
    
 }
