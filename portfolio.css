@@ -19,17 +19,8 @@ html {
 
 }
 
-.nav {
 
-    background-color: #d4d4d4;
 
-    text-decoration: none;
-
-    text-decoration-style: none;
-
-    width: max-width;
-
-}
 
 .navcontent {
 
@@ -37,7 +28,9 @@ html {
 
     font-size: 2rem;
 
-    align-items: left;
+    height: 3rem;
+
+  
 
     background-color: rgb(174, 169, 255);
 
@@ -59,6 +52,13 @@ html {
 
     justify-content: space-evenly;
 
+    padding-top: 0.7rem;
+
+    
+}
+
+.m{
+    text-decoration: none;
 }
 
 .navcontent ul li {
@@ -67,21 +67,19 @@ html {
 
     list-style: none;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 
-    padding: 1rem;
+    
 
-    background-color: cornflowerblue;
-
-    border-radius: 50px;
+    
 
     transition: 1s;
 
     cursor: pointer;
 
-    padding: 10px;
+   
 
-    font-size: 20px;
+    
 
     font-family: 'Unbounded', cursive;
 
@@ -101,8 +99,16 @@ html {
 
     margin-top: 0px;
 
-    background-image: url("https://unsplash.com/photos/_nWaeTF6qo0");
+    
 
+}
+
+.info h1{
+    color: #ffffff;
+}
+
+.info p{
+    color: #ffffff;
 }
 
 @keyframes info {
@@ -121,7 +127,6 @@ html {
 
     100% {
 
-        background-position: ;
 
     }
 
@@ -137,7 +142,7 @@ html {
 
 .bio {
 
-    margin: 4rem;
+    margin: 6rem;
 
 }
 
@@ -161,35 +166,47 @@ html {
 
     text-align: center;
 
+    
 }
 
-a. {}
+
 
 #section1 {
 
     height: 50rem;
 
-    background-image: url("");
+    background-image: url("https://images.hdqwalls.com/download/green-blue-violet-gradient-8k-xv-1920x1080.jpg");
 
-    background: #d4d4d4;
+    
 
     display: inline-block;
 
     width: max-width;
 
+   
 }
 
 #section2 {
 
     height: 900px;
 
-    background: #a1a1a1;
+    background: rgb(13,17,22);
 
     display: inline-block;
 
     width: max-width;
 
+    
+
 }
+
+#section2 h1 {
+    color: rgb(125,229,134);
+}
+#section2 h2 {
+    color: #ffffff;
+}
+
 
 #section3 {
 
@@ -201,22 +218,40 @@ a. {}
 
     width: max-width;
 
+    background: rgb(13,17,22);
     margin-top: none;
 
     position: relative;
 
 }
 
+#section3 h1 {
+    color: rgb(255,162,139)
+}
+#section3 h2 {
+    color: #ffffff;
+}
+#section3 h3 {
+    color: #ffffff;
+}
+
+
 #section4 {
 
-    height: `1000px;
+    height: 1650px;
 
-    background: #a1a1a1;
 
     display: inline-block;
 
     width: max-width;
+    background: rgb(13,17,22);
 
+}
+
+#section4 h1 {
+    color: #939aff;
+}#section4 h2 {
+    color: #ffffff;
 }
 
 h1 {
@@ -290,8 +325,14 @@ h3 {
 
     justify-content: space-evenly;
 
-    gap: 5rem;
+    gap: 13rem;
 
+    padding-right: 3rem;
+
+}
+
+.educationdiv{
+    padding-left: 2.3rem;
 }
 
 .paragraph {
@@ -326,6 +367,9 @@ h3 {
 
 }
 
+.connectdiv{
+    padding-left: 4rem;
+}
 .card {
 
     width: 50%;
@@ -392,6 +436,10 @@ h3 {
 
     color: #ffffff;
 
+    font-family: 'Unbounded', cursive;
+
+
+
 }
 
 .card .row .form-group input,
@@ -408,7 +456,7 @@ h3 {
 
     outline: none;
 
-    font-size: 24px;
+    font-size: 10px;
 
     padding: 10px 0 10px 20px;
 
@@ -419,6 +467,8 @@ h3 {
     color: #ffffff;
 
     border-radius: 50px;
+
+    font-family: 'Unbounded', cursive;
 
 }
 
@@ -535,7 +585,7 @@ h3 {
     width: 100%;
 
     height: 75rem;
-
+    
 }
 
 @media (max-width: 768px) {
@@ -578,4 +628,8 @@ h3 {
         width: 100%;
     }
    
+}
+
+.invert{
+    filter: brightness(0) invert(1); 
 }
