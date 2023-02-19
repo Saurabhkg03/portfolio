@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+    />
+    <title>Fablab SSGMCE</title> 
+
+    <link rel="shortcut icon" type="image/x-icon" href="icon2.ico" />
+
+  </head>
+  <body>
+    <div class="desktop-1">
+      <img
+        class="f8ed6957de2527695d31bca6605524-icon"
+        alt=""
+        src="public/1000014590-f8ed6957de2527695d31bca6605524d910-12-2022-14-40-50-1@2x.png"
+      />
+      <div class="desktop-1-inner">
+        <div class="instance-wrapper">
+          <div class="rectangle-wrapper" data-animate-on-scroll>
+            <div class="instance-child"></div>
+          </div>
+        </div>
+      </div>
+      <img class="screenshot-9-1" alt="" src="public/screenshot-9-1@2x.png" />
+      <div class="desktop-1-child">
+        <div class="instance-wrapper">
+          <div class="rectangle-wrapper" data-animate-on-scroll>
+            <div class="instance-child"></div>
+          </div>
+        </div>
+      </div>
+      <img class="screenshot-11-1" alt="" src="public/screenshot-11-1@2x.png" />
+      <div class="group-div">
+        <div class="instance-wrapper">
+          <div class="instance-wrapper"><div class="instance-child"></div></div>
+        </div>
+      </div>
+      <img class="screenshot-6-icon" alt="" src="public/screenshot-6@2x.png" />
+      <div class="desktop-1-inner1">
+        <div class="instance-wrapper">
+          <div class="instance-wrapper"><div class="instance-child"></div></div>
+        </div>
+      </div>
+      <img class="screenshot-8-icon" alt="" src="public/screenshot-8@2x.png" />
+      <div class="desktop-1-inner2">
+        <div class="instance-wrapper">
+          <div class="instance-wrapper"><div class="instance-child"></div></div>
+        </div>
+      </div>
+      <img class="screenshot-5-icon" alt="" src="public/screenshot-5@2x.png" />
+      <div class="desktop-1-inner3">
+        <div class="instance-wrapper">
+          <div class="instance-wrapper"><div class="instance-child"></div></div>
+        </div>
+      </div>
+      <img class="screenshot-10-1" alt="" src="public/screenshot-10-1@2x.png" />
+      <div class="desktop-1-inner4">
+        <div class="instance-wrapper">
+          <div class="instance-wrapper"><div class="instance-child"></div></div>
+        </div>
+      </div>
+      <img class="screenshot-12-1" alt="" src="public/screenshot-12-1@2x.png" />
+      <div class="desktop-1-inner5">
+        <div class="instance-wrapper5">
+          <div class="instance-wrapper5">
+            <button class="rectangle-button"></button>
+          </div>
+        </div>
+      </div>
+      <img class="desktop-1-item" alt="" src="public/line-2.svg" /><img
+        class="line-icon"
+        alt=""
+        src="public/line-2.svg"
+      /><b class="projects-i-have">Projects I Have Done</b>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
