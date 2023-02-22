@@ -35,7 +35,6 @@
     <div class="navcontent">
 
         <ul>
-
             <li class="m"><a class="m" href="#section1">Home</a></li>
 
             <li class="m"><a class="m" href="#section2">About</a></li>
@@ -62,6 +61,7 @@
 
                 <br>
 
+                
             </div>
 
             <div class="bio">
@@ -69,8 +69,64 @@
                 <h1 class="a anim"> Hi, I'm Saurabh</h1>
 
                 <p class="paragraph anim"> I'm a Freshman at Shri Sant Gajanan Maharaj College of Engineering Shegaon
-                    <br> <br> <br> A Student from the Electronics and Telecommunication Department. </p>
+                    <br> <br> <br> A Student from the Electronics and Telecommunication Department.
+                </p>
 
+
+                <script>
+                    const tiltEffectSettings = {
+                        max: 15, // max tilt rotation (degrees (deg))
+                        perspective: 3500, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
+                        scale: 1.04, // transform scale - 2 = 200%, 1.5 = 150%, etc..
+                        speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
+                        easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
+                    };
+
+                    const cards = document.querySelectorAll(".bio");
+
+                    cards.forEach(card => {
+                        card.addEventListener("mouseenter", cardMouseEnter);
+                        card.addEventListener("mousemove", cardMouseMove);
+                        card.addEventListener("mouseleave", cardMouseLeave);
+                    });
+
+                    function cardMouseEnter(event) {
+                        setTransition(event);
+                    }
+
+                    function cardMouseMove(event) {
+                        const card = event.currentTarget;
+                        const cardWidth = card.offsetWidth;
+                        const cardHeight = card.offsetHeight;
+                        const centerX = card.offsetLeft + cardWidth / 2;
+                        const centerY = card.offsetTop + cardHeight / 2;
+                        const mouseX = event.clientX - centerX;
+                        const mouseY = event.clientY - centerY;
+                        const rotateXUncapped = (+1) * tiltEffectSettings.max * mouseY / (cardHeight / 2);
+                        const rotateYUncapped = (-1) * tiltEffectSettings.max * mouseX / (cardWidth / 2);
+                        const rotateX = rotateXUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+                            (rotateXUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateXUncapped);
+                        const rotateY = rotateYUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+                            (rotateYUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateYUncapped);
+
+                        card.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) 
+                            scale3d(${tiltEffectSettings.scale}, ${tiltEffectSettings.scale}, ${tiltEffectSettings.scale})`;
+                    }
+
+                    function cardMouseLeave(event) {
+                        event.currentTarget.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+                        setTransition(event);
+                    }
+
+                    function setTransition(event) {
+                        const card = event.currentTarget;
+                        clearTimeout(card.transitionTimeoutId);
+                        card.style.transition = `transform ${tiltEffectSettings.speed}ms ${tiltEffectSettings.easing}`;
+                        card.transitionTimeoutId = setTimeout(() => {
+                            card.style.transition = "";
+                        }, tiltEffectSettings.speed);
+                    }
+                </script>
             </div>
 
         </div>
@@ -86,7 +142,7 @@
 
             <div class="aboutdiv">
 
-                <h2 class="anim">I am from Buldana city, India <br> <br> <br> I like Art, Music and Computers! </h2>
+                <p class="anim">I am from Buldana city, India <br> <br> <br> I like Art, Music and Computers! </p>
 
                 <img class="pic anim"
                     src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966"
@@ -153,14 +209,15 @@
         <div class="connectdiv">
             <h2 class="anim"> Connect with me on my social media links-</h2>
             <a class="invert" href="http://instagram.com/__saurabhkg__"><img class="icons anim"
-                    src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-256.png" alt=""></a> <a class="invert"
+                    src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-256.png" alt=""></a> <a
+                class="invert"
                 href="https://twitter.com/saurabh_exe?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1595665611363090432%7Ctwgr%5E9de82cefe82baadffbd84bb83aa03e90e861a7ae%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Flinktr.ee%2Fsaurabhkg"><img
                     class="icons anim" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-256.png"
                     alt=""></a> <a class="invert" href="https://github.com/Saurabhkg03"><img class="icons anim"
-                    src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-256.png" alt=""></a> <a class="invert"
-                href="https://www.linkedin.com/in/saurabh-gaikwad-605a70228/"><img class="icons anim"
-                    src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-256.png" alt=""></a> <a class="invert"
-                href="https://www.artstation.com/saurabhgaikwad2"><img class="icons anim"
+                    src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-256.png" alt=""></a> <a
+                class="invert" href="https://www.linkedin.com/in/saurabh-gaikwad-605a70228/"><img class="icons anim"
+                    src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-256.png" alt=""></a> <a
+                class="invert" href="https://www.artstation.com/saurabhgaikwad2"><img class="icons anim"
                     src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/artstation-256.png" alt=""></a>
 
             <div class="contact">
@@ -229,15 +286,16 @@
                     </div>
 
                 </div>
-                <h1 class="anim"> &lt; / Connect&gt; </h1>
+                
             </div>
+
             
 
-
         </div>
-
+        <h1 class="anim"> &lt; / Connect&gt; </h1>
     </div>
 
 </body>
+
 
 </html>
