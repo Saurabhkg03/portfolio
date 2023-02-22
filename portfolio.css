@@ -10,6 +10,8 @@
 
     display: grid;
 
+    
+
 
 }
 
@@ -30,11 +32,7 @@ html {
 
     height: 3rem;
 
-  
-
     background-color: rgb(174, 169, 255);
-
-    padding-left: 5rem;
 
     box-shadow: 5px 5px 5px rgb(132, 132, 255);
 
@@ -77,7 +75,6 @@ html {
 
     cursor: pointer;
 
-   
 
     
 
@@ -166,8 +163,16 @@ html {
 
     text-align: center;
 
+    transform-style: preserve-3d;
+
+    transform: perspective(1000px);
+
     
 }
+
+.bio h1, .bio h2 {
+    transform: translateZ(50px);
+  }
 
 
 
@@ -206,7 +211,13 @@ html {
 #section2 h2 {
     color: #ffffff;
 }
-
+#section2 p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding-left: 7rem;
+    font-family: 'Unbounded', cursive;
+    font-weight: 1000;
+}
 
 #section3 {
 
@@ -238,7 +249,7 @@ html {
 
 #section4 {
 
-    height: 1650px;
+    height: 1500px;
 
 
     display: inline-block;
@@ -584,11 +595,18 @@ h3 {
 
     width: 100%;
 
-    height: 75rem;
+    height: 42rem;
     
 }
 
 @media (max-width: 768px) {
+
+
+    .body{
+        width: min-content;
+        display: grid;
+    }
+
 
     .info{
         display: grid;
@@ -600,7 +618,10 @@ h3 {
     }
 
     #section1{
-        height: 84rem;
+        height: 90rem;
+        background-repeat: no-repeat;
+        background-image: url("rotatedpic.jpg");
+        
     }
     
     #section2{
@@ -608,20 +629,40 @@ h3 {
     }
 
     #section3{
-        height: 56rem;
+        height: 50rem;
     }
 
     #section4{
         height: 115rem;
+        
     }
 
+    #section2 p{
+        padding-left: 3rem;
+    }
+    .educationdiv{
+        padding-left: 0%;
+    }
+    .connectdiv{
+        padding-left: 0px;
+    }
     .bio{
         height: 35rem;
         width: fit-content;
     }
 
     .card{
-        width: fit-content;
+        max-width: max-content;
+        width: 100%;
+        
+    }
+
+    .contact{
+        padding-top: 5rem;
+        height: 60rem;
+    }
+    .row{
+        max-width: 450px;
     }
 
     .pic{
@@ -632,4 +673,8 @@ h3 {
 
 .invert{
     filter: brightness(0) invert(1); 
+}
+
+.connect2{
+    padding-left: none;
 }
