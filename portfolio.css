@@ -187,13 +187,13 @@ html {
     display: inline-block;
 
     width: max-width;
+;
 
-   
 }
 
 #section2 {
 
-    height: 900px;
+    height: 800px;
 
     background: rgb(13,17,22);
 
@@ -205,8 +205,11 @@ html {
 
 }
 
+
 #section2 h1 {
     color: rgb(125,229,134);
+    text-shadow:
+
 }
 #section2 h2 {
     color: #ffffff;
@@ -214,14 +217,14 @@ html {
 #section2 p {
     color: #ffffff;
     font-size: 1.4rem;
-    padding-left: 7rem;
+    padding-left: rem;
     font-family: 'Unbounded', cursive;
     font-weight: 1000;
 }
 
 #section3 {
 
-    height: 800px;
+    height: 900px;
 
     background: #d4d4d4;
 
@@ -233,6 +236,8 @@ html {
     margin-top: none;
 
     position: relative;
+
+    
 
 }
 
@@ -316,7 +321,7 @@ h3 {
 
     width: 4rem;
 
-    padding-left: 7rem;
+    padding-left: 11.5%;
 
     padding-top: 3rem;
 
@@ -324,27 +329,67 @@ h3 {
 
 .pic {
 
-    width: 40rem;
+    width: 30rem;
 
-    height: 25rem;
+    height: 20rem;
 
 }
-
+.aboutdivparent{
+    display: grid;
+    place-items: center;
+}
 .aboutdiv {
 
     display: flex;
 
     justify-content: space-evenly;
 
-    gap: 13rem;
+    background: #a6a6a633;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+max-width: 70rem;
+width: 100%;
+padding-top: 4rem;
+max-height: 25rem;
+height: 100%;
+}
 
-    padding-right: 3rem;
 
+
+.educationdivparent{
+    display: grid;
+    place-items: center;
+    max-height: 30rem;
+    height: 100%;
 }
 
 .educationdiv{
-    padding-left: 2.3rem;
+    padding-left: rem;
+    background: #a6a6a633;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+max-width: 70rem;
+width: 100%;
+padding-top: 4rem;
+max-height: 25rem;
+height: 100%;
+
+transform-style: preserve-3d;
+
+    transform: perspective(1000px);
+
 }
+
+
+.educationdiv h1, .educationdiv h2, .educationdiv h3{
+    transform: translateZ(50px);
+  }
 
 .paragraph {
 
@@ -354,6 +399,7 @@ h3 {
 
     padding-right: 3rem;
 
+    padding-bottom: 5rem;
 }
 
 .anim {
@@ -379,7 +425,25 @@ h3 {
 }
 
 .connectdiv{
-    padding-left: 4rem;
+    
+    display: grid;
+    place-items: center;
+
+}
+.connectdivparent{
+    background: #a6a6a633;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+max-width: 70rem;
+width: 100%;
+padding-top: 3rem;
+padding-bottom: rem;
+max-height: 25rem;
+height: 100%;
+
 }
 .card {
 
@@ -395,7 +459,7 @@ h3 {
 
     position: relative;
 
-    margin-left: 6rem;
+    margin-left: rem;
 
 }
 
@@ -589,9 +653,10 @@ h3 {
 
 .contact{
 
-   
+    display: grid;
+    place-items: center;
 
-    padding-top: 3rem;
+    padding-top: 7rem;
 
     width: 100%;
 
@@ -602,6 +667,7 @@ h3 {
 @media (max-width: 768px) {
 
 
+    
     .body{
         width: min-content;
         display: grid;
@@ -615,6 +681,11 @@ h3 {
     .aboutdiv{
         display: grid;
         gap: none;
+        max-height: 80rem;
+        height: 100%;
+        width: 80%;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
     }
 
     #section1{
@@ -625,11 +696,18 @@ h3 {
     }
     
     #section2{
-        height: 70rem;
+        height: 60rem;
     }
 
     #section3{
-        height: 50rem;
+        height: 55rem;
+    }
+
+    #section3 h2{
+        padding-left: 6%;
+    }
+    #section3 h3{
+        padding-left: 10%;
     }
 
     #section4{
@@ -642,9 +720,24 @@ h3 {
     }
     .educationdiv{
         padding-left: 0%;
+        width: 80%;
+        
     }
     .connectdiv{
         padding-left: 0px;
+    }
+
+    .connectdivparent{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .connectdivparent h2{
+        padding-left: 9%;
+        
+    }
+    .connectdivparent .icons{
+        padding-left: 6%;
+        
     }
     .bio{
         height: 35rem;
@@ -678,3 +771,4 @@ h3 {
 .connect2{
     padding-left: none;
 }
+
