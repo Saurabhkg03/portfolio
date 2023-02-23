@@ -28,6 +28,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body class="body">
@@ -49,14 +51,16 @@
         </ul>
 
     </div>
+    
     <div id="section1">
 
+        
         <div class="info">
 
+            
             <div class="imgdiv">
 
-                <a class="anim"
-                    ><img src="https://iili.io/HcmxCx4.md.jpg" alt=""
+               <a class="anim"><img src="https://iili.io/HcmxCx4.md.jpg" alt=""
                         border="0"></a>
 
                 <br>
@@ -126,6 +130,16 @@
                             card.style.transition = "";
                         }, tiltEffectSettings.speed);
                     }
+
+                    const button = document.querySelector(".bio");
+
+const readout = document.querySelector("p");
+
+button.addEventListener("mousemove", (e) => {
+  const { x, y } = button.getBoundingClientRect();
+  button.style.setProperty("--x", e.clientX - x);
+  button.style.setProperty("--y", e.clientY - y);
+});
                 </script>
             </div>
 
@@ -140,6 +154,7 @@
 
             <h1 class="h1 anim"> &lt; About&gt; </h1>
 
+            <div class="aboutdivparent">
             <div class="aboutdiv">
 
                 <p class="anim">I am from Buldana city, India <br> <br> <br> I like Art, Music and Computers! </p>
@@ -148,8 +163,10 @@
                     src="https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966"
                     alt="">
 
-            </div>
+            
 
+        </div>
+    </div>
             <h1 class="anim"> &lt; / About&gt; </h1>
 
         </div>
@@ -162,6 +179,8 @@
 
         <h1 class="anim"> &lt; Education&gt; </h1>
 
+        <div class="educationdivparent">
+            
         <div class="educationdiv">
 
             <h2 class="anim">• Current</h2>
@@ -195,6 +214,7 @@
             <h3 class="anim">Gandhi Primary School, Buldana</h3>
 
         </div>
+        </div>
 
         <h1 class="anim"> &lt; / Education&gt; </h1>
 
@@ -207,6 +227,7 @@
         <h1 class="anim"> &lt; Connect&gt; </h1>
 
         <div class="connectdiv">
+            <div class="connectdivparent">
             <h2 class="anim"> Connect with me on my social media links-</h2>
             <a class="invert" href="http://instagram.com/__saurabhkg__"><img class="icons anim"
                     src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-256.png" alt=""></a> <a
@@ -219,7 +240,7 @@
                     src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-256.png" alt=""></a> <a
                 class="invert" href="https://www.artstation.com/saurabhgaikwad2"><img class="icons anim"
                     src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/artstation-256.png" alt=""></a>
-
+                        </div>
             <div class="contact">
 
                 <div class="card">
