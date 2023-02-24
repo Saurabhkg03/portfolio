@@ -4,7 +4,10 @@
 
     padding: 0;
 
+    
+
 }
+
 
 .body{
 
@@ -29,6 +32,7 @@ html {
     width: max-width;
 
     font-size: 2rem;
+
     height: 3rem;
 
     background-color: rgb(174, 169, 255);
@@ -760,8 +764,7 @@ height: 100%;
     .pic{
         width: 100%;
     }
-   
-}
+
 
 .invert{
     filter: brightness(0) invert(1); 
@@ -771,3 +774,16 @@ height: 100%;
     padding-left: none;
 }
 
+.navcontent{
+    height: 4.5rem ;
+    display: grid;
+    place-items: centre;
+
+    padding-top: 1rem;
+}
+
+.navcontent a{
+    font-size: 1.5rem;
+    
+}
+}
