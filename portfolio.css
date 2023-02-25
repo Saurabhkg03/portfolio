@@ -4,17 +4,17 @@
 
     padding: 0;
 
-    
+
 
 }
 
 
 
-.body{
+.body {
 
     display: grid;
 
-    
+
 
 
 }
@@ -56,10 +56,10 @@ html {
 
     padding-top: 0.7rem;
 
-    
+
 }
 
-.m{
+.m {
     text-decoration: none;
 }
 
@@ -71,16 +71,16 @@ html {
 
     font-size: 1.5rem;
 
-    
 
-    
+
+
 
     transition: 1s;
 
     cursor: pointer;
 
 
-    
+
 
     font-family: 'Unbounded', cursive;
 
@@ -100,15 +100,15 @@ html {
 
     margin-top: 0px;
 
-    
+
 
 }
 
-.info h1{
+.info h1 {
     color: #ffffff;
 }
 
-.info p{
+.info p {
     color: #ffffff;
 }
 
@@ -126,10 +126,7 @@ html {
 
     }
 
-    100% {
-
-
-    }
+    100% {}
 
 }
 
@@ -171,12 +168,13 @@ html {
 
     transform: perspective(1000px);
 
-    
+
 }
 
-.bio h1, .bio h2 {
+.bio h1,
+.bio h2 {
     transform: translateZ(50px);
-  }
+}
 
 
 
@@ -184,14 +182,30 @@ html {
 
     height: 50rem;
 
-    background-image: url("https://images.hdqwalls.com/download/green-blue-violet-gradient-8k-xv-1920x1080.jpg");
 
-    
 
     display: inline-block;
 
     width: max-width;
-;
+
+    background: linear-gradient(-45deg, #08a6ef, #8120be, #1b073c, #17003b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 
 }
 
@@ -199,19 +213,19 @@ html {
 
     height: 800px;
 
-    background: rgb(13,17,22);
+    background: rgb(13, 17, 22);
 
     display: inline-block;
 
     width: max-width;
 
-    
+
 
 }
 
 
 #section2 h1 {
-    color: rgb(125,229,134);
+    color: rgb(125, 229, 134);
     text-shadow:
 
 }
@@ -219,6 +233,7 @@ html {
 #section2 h2 {
     color: #ffffff;
 }
+
 #section2 p {
     color: #ffffff;
     font-size: 1.4rem;
@@ -237,21 +252,23 @@ html {
 
     width: max-width;
 
-    background: rgb(13,17,22);
+    background: rgb(13, 17, 22);
     margin-top: none;
 
     position: relative;
 
-    
+
 
 }
 
 #section3 h1 {
-    color: rgb(255,162,139)
+    color: rgb(255, 162, 139)
 }
+
 #section3 h2 {
     color: #ffffff;
 }
+
 #section3 h3 {
     color: #ffffff;
 }
@@ -265,13 +282,15 @@ html {
     display: inline-block;
 
     width: max-width;
-    background: rgb(13,17,22);
+    background: rgb(13, 17, 22);
 
 }
 
 #section4 h1 {
     color: #939aff;
-}#section4 h2 {
+}
+
+#section4 h2 {
     color: #ffffff;
 }
 
@@ -284,6 +303,7 @@ h1 {
     padding: 0;
 
 }
+
 .m {
 
     text-decoration: none;
@@ -339,10 +359,12 @@ h3 {
     height: 20rem;
 
 }
-.aboutdivparent{
+
+.aboutdivparent {
     display: grid;
     place-items: center;
 }
+
 .aboutdiv {
 
     display: flex;
@@ -350,51 +372,53 @@ h3 {
     justify-content: space-evenly;
 
     background: #a6a6a633;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba(255, 255, 255, 0.18);
-max-width: 70rem;
-width: 100%;
-padding-top: 4rem;
-max-height: 25rem;
-height: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 70rem;
+    width: 100%;
+    padding-top: 4rem;
+    max-height: 25rem;
+    height: 100%;
 }
 
 
 
-.educationdivparent{
+.educationdivparent {
     display: grid;
     place-items: center;
     max-height: 30rem;
     height: 100%;
 }
 
-.educationdiv{
+.educationdiv {
     padding-left: rem;
     background: #a6a6a633;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba(255, 255, 255, 0.18);
-max-width: 70rem;
-width: 100%;
-padding-top: 4rem;
-max-height: 25rem;
-height: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 70rem;
+    width: 100%;
+    padding-top: 4rem;
+    max-height: 25rem;
+    height: 100%;
 
-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
     transform: perspective(1000px);
 
 }
 
 
-.educationdiv h1, .educationdiv h2, .educationdiv h3{
+.educationdiv h1,
+.educationdiv h2,
+.educationdiv h3 {
     transform: translateZ(50px);
-  }
+}
 
 .paragraph {
 
@@ -429,27 +453,29 @@ transform-style: preserve-3d;
 
 }
 
-.connectdiv{
-    
+.connectdiv {
+
     display: grid;
     place-items: center;
 
 }
-.connectdivparent{
+
+.connectdivparent {
     background: #a6a6a633;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-max-width: 70rem;
-width: 100%;
-padding-top: 3rem;
-padding-bottom: rem;
-max-height: 25rem;
-height: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 70rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: rem;
+    max-height: 25rem;
+    height: 100%;
 
 }
+
 .card {
 
     width: 50%;
@@ -656,7 +682,7 @@ height: 100%;
 
 }
 
-.contact{
+.contact {
 
     display: grid;
     place-items: center;
@@ -666,24 +692,33 @@ height: 100%;
     width: 100%;
 
     height: 42rem;
-    
+
 }
 
 @media (max-width: 768px) {
 
 
-    
-    .body{
+
+    .body {
         width: min-content;
         display: grid;
+        cursor: default;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .cursor-follower{
+        display: none;
     }
 
 
-    .info{
+    .info {
         display: grid;
     }
 
-    .aboutdiv{
+    .aboutdiv {
         display: grid;
         gap: none;
         max-height: 80rem;
@@ -693,99 +728,123 @@ height: 100%;
         padding-top: 4rem;
     }
 
-    #section1{
+    #section1 {
         height: 90rem;
         background-repeat: no-repeat;
-        background-image: url("rotatedpic.jpg");
-        
+        background: linear-gradient(-45deg, #08a6ef, #8120be, #1b073c, #17003b);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+
     }
-    
-    #section2{
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+
+    }
+
+    #section2 {
         height: 60rem;
     }
 
-    #section3{
+    #section3 {
         height: 55rem;
     }
 
-    #section3 h2{
+    #section3 h2 {
         padding-left: 6%;
     }
-    #section3 h3{
+
+    #section3 h3 {
         padding-left: 10%;
     }
 
-    #section4{
+    #section4 {
         height: 115rem;
-        
+
     }
 
-    #section2 p{
+    #section2 p {
         padding-left: 3rem;
     }
-    .educationdiv{
+
+    .educationdiv {
         padding-left: 0%;
         width: 80%;
-        
+
     }
-    .connectdiv{
+
+    .connectdiv {
         padding-left: 0px;
     }
 
-    .connectdivparent{
+    .connectdivparent {
         width: 80%;
         margin-bottom: 2rem;
     }
-    .connectdivparent h2{
+
+    .connectdivparent h2 {
         padding-left: 9%;
-        
+
     }
-    .connectdivparent .icons{
+
+    .connectdivparent .icons {
         padding-left: 6%;
-        
+
     }
-    .bio{
+
+    .bio {
         height: 35rem;
         width: fit-content;
     }
 
-    .card{
+    .card {
         max-width: max-content;
         width: 100%;
-        
+
     }
 
-    .contact{
+    .contact {
         padding-top: 5rem;
         height: 60rem;
     }
-    .row{
+
+    .row {
         max-width: 450px;
     }
 
-    .pic{
+    .pic {
         width: 100%;
     }
 
 
-.invert{
-    filter: brightness(0) invert(1); 
-}
+    .invert {
+        filter: brightness(0) invert(1);
+    }
 
-.connect2{
-    padding-left: none;
-}
+    .connect2 {
+        padding-left: none;
+    }
 
-.navcontent{
-    height: 4.5rem ;
-    display: grid;
-    place-items: centre;
+    .navcontent {
+        height: 4.5rem;
+        display: grid;
+        place-items: centre;
 
-    padding-top: 1rem;
-}
+        padding-top: 1rem;
+    }
 
-.navcontent a{
-    font-size: 1.5rem;
-    
-}
+    .navcontent a {
+        font-size: 1.5rem;
+
+    }
 }
