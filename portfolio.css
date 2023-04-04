@@ -390,6 +390,7 @@ h3 {
     margin-left: 10%;
     margin-right: 75%;
     padding: 1%;
+    
     text-align: center;
     font-size: 1.2rem;
     background: #a6a6a633;
@@ -398,6 +399,9 @@ h3 {
     -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    text-decoration: none;
+    color: white;
+    font-family: 'Unbounded', cursive;
 }
 
 .download a{
@@ -405,6 +409,7 @@ h3 {
     color: white;
     
 }
+
 
 .pic {
 
@@ -1128,18 +1133,18 @@ place-items: ;
         
     }
     .download{
-        width: 50%;
+        width: ;
         padding: 3%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin-top: 2rem;
         
-        margin-right: 0%;
         text-align: center;
+        font-size: 0.9rem;
     }
 
-    .download h2 {
+    .download a {
         padding-left: 0%;
         margin-left: 0%;
+        
     }
 }
 
