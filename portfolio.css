@@ -907,7 +907,8 @@ place-items: ;
     .connectdivparent {
         width: 80%;
         margin-bottom: 2rem;
-        
+        max-height: 32rem;
+    height: 100%;
     }
 
     .connectdivparent h2 {
